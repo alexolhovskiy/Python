@@ -49,7 +49,8 @@ def Edit(my_tuple):
     if arr[1]!='':
         phone_book[ind]['comment']=arr[1]
     if len(arr[2])>0:
-        phone_book[ind]['phones'].append(arr[2])
+        phone_book[ind]['phones'].clear()
+        phone_book[ind]['phones'].extend(arr[2])
 
         
 def Print():
